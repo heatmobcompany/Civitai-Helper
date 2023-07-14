@@ -13,9 +13,9 @@ root_path = os.getcwd()
 # then model folder is in absolute path, not based on this root path anymore.
 # so to make extension work with those absolute model folder paths, model folder also need to be in absolute path
 folders = {
-    "ti": os.path.join(root_path, "embeddings"),
-    "hyper": os.path.join(root_path, "models", "hypernetworks"),
-    "ckp": os.path.join(root_path, "models", "Stable-diffusion"),
+    # "ti": os.path.join(root_path, "embeddings"),
+    # "hyper": os.path.join(root_path, "models", "hypernetworks"),
+    # "ckp": os.path.join(root_path, "models", "Stable-diffusion"),
     "lora": os.path.join(root_path, "models", "Lora"),
 }
 

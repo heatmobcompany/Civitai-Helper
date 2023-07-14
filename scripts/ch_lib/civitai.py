@@ -19,11 +19,11 @@ url_dict = {
 }
 
 model_type_dict = {
-    "Checkpoint": "ckp",
-    "TextualInversion": "ti",
-    "Hypernetwork": "hyper",
+    # "Checkpoint": "ckp",
+    # "TextualInversion": "ti",
+    # "Hypernetwork": "hyper",
     "LORA": "lora",
-    "LoCon": "lora",
+    # "LoCon": "lora",
 }
 
 

@@ -338,7 +338,8 @@ onUiLoaded(() => {
 
     // get all extra network tabs
     let tab_prefix_list = ["txt2img", "img2img"];
-    let model_type_list = ["textual_inversion", "hypernetworks", "checkpoints", "lora"];
+    // let model_type_list = ["textual_inversion", "hypernetworks", "checkpoints", "lora"];
+    let model_type_list = ["lora"];
     let cardid_suffix = "cards";
 
     //get init py msg
@@ -430,11 +431,11 @@ onUiLoaded(() => {
             if (!extra_tabs) {console.log("can not find extra_tabs: " + tab_prefix+"_extra_tabs");}
 
             //get active extratab
-            const active_extra_tab = Array.from(get_uiCurrentTabContent().querySelectorAll('.extra-network-cards,.extra-network-thumbs'))
+            let active_extra_tab = Array.from(get_uiCurrentTabContent().querySelectorAll('.extra-network-cards,.extra-network-thumbs'))
                 .find(el => el.closest('.tabitem').style.display === 'block')
                 ?.id.match(/^(txt2img|img2img)_(.+)_cards$/)[2]
 
-                
+            active_extra_tab = 'lora';
             console.log("found active tab: " + active_extra_tab);
 
             switch (active_extra_tab) {
